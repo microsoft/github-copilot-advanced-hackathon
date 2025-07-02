@@ -17,7 +17,7 @@ Together, they transform GitHub Copilot into an intelligent development assistan
 ## 🛠️ Installation & Setup
 
 ### Step 1: Clone and Copy Framework Files
-
+#### Windows Terminal:
 ```powershell
 # Clone this repository
 git clone https://github.com/ChrisMcKee1/AI-Assisted-Coding.git
@@ -25,7 +25,17 @@ cd AI-Assisted-Coding
 
 # Copy all framework files to your project's root directory
 # Replace 'your-project-path' with the actual path to your project
-Copy-Item -Path ".\*" -Destination "C:\path\to\your-project\" -Recurse -Force
+robocopy . "C:\path\to\your-project" /E /XD .git
+```
+
+#### Linux / OSX Terminal:
+```bash
+git clone https://github.com/ChrisMcKee1/AI-Assisted-Coding.git
+cd AI-Assisted-Coding
+
+# Copy all framework files to your project's root directory
+# Replace '/path/to/your-project' with the actual path to your project
+rsync -av --exclude='.git' . /path/to/your-project/
 ```
 
 ### Step 2 (optional): Change the MCP Configuration
