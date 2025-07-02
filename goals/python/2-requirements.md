@@ -187,6 +187,9 @@ Use this section to document key decisions made during feature design:
 - [ ] Performance benchmarks
 ```
 
+  > [!TIP]
+  > Try using Copilot to have it write your requirements for you! Copy the template, and surround it with <|TEMPLATE_START|><|TEMPLATE_END|>, and describe to the AI the Feature you'd like to plan! Then review and edit the generated markdown file to ensure that it matches what you want!
+
 ## ✅ Success Criteria
 
 Your feature requirements document should demonstrate:

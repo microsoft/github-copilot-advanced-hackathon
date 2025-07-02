@@ -37,4 +37,4 @@ To run the eShop project:
 3. Run the solution using Visual Studio or configure your environment using the provided PowerShell scripts.
 
 ## Internal Use and Demonstrations
-The eShop app has been featured in internal presentations such as the `[dotnet conf 2024 Keynote - Copy 3](https://microsoft.sharepoint.com/teams/DevRelTeam/_layouts/15/Doc.aspx?sourcedoc=%7B15D653EE-CFB6-4C32-8669-EF8B2367FE95%7D&file=dotnet%20conf%202024%20Keynote%20-%20Copy%203.pptx&action=edit&mobileredirect=true&DefaultItemOpen=1&EntityRepresentationId=421e3d07-d5fd-4cc9-b4ee-9dac667e0f4b)`, where it was used to demonstrate .NET 9
+The eShop app has been featured in internal presentations such as the [dotnet conf 2024 Keynote - Copy 3](https://microsoft.sharepoint.com/teams/DevRelTeam/_layouts/15/Doc.aspx?sourcedoc=%7B15D653EE-CFB6-4C32-8669-EF8B2367FE95%7D&file=dotnet%20conf%202024%20Keynote%20-%20Copy%203.pptx&action=edit&mobileredirect=true&DefaultItemOpen=1&EntityRepresentationId=421e3d07-d5fd-4cc9-b4ee-9dac667e0f4b), where it was used to demonstrate .NET 9
