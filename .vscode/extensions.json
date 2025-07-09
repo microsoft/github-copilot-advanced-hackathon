@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "bierner.markdown-preview-github-styles",
+    "bierner.markdown-mermaid",
+    "bierner.github-markdown-preview",
+    "github.copilot-chat",
+    "mermaidchart.vscode-mermaid-chart",
+    "ms-vscode.copilot-mermaid-diagram",
+    "ms-vscode.vscode-websearchforcopilot"
+  ]
+}
