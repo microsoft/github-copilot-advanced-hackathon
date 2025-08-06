@@ -58,7 +58,7 @@ code .
 
 ### Step 4: Run the Analyze Workflow
 
-Run the `/analyze-product` prompt to analyze your woskpace and generate the documents that help the spec-driven development workflow operate smoothly.
+Run the `/analyze-product` prompt to analyze your workspace and generate the documents that help the spec-driven development workflow operate smoothly.
 
 ### Step 5: Verify GitHub Copilot Integration
 
