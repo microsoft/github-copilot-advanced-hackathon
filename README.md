@@ -6,11 +6,11 @@ Developers today agree that AI code assistant tools are useful for easy, repeata
 ## Prerequisites
 
 - Clone the Spec Driven Coding Framework repository: https://github.com/seiggy/AI-Assisted-Coding
-- [Install & start Docker Desktop](https://docs.docker.com/get-started/get-docker/) 
 
-or
-
-- [Install & Start Podman](https://podman.io/docs/installation)
+- [NodeJS 16+](https://nodejs.org/) for MCP servers
+- **Container Platform** An OCI compliant container runtime is recommended for .NET, and Python developers
+    - [Docker Desktop](https://www.docker.com/products/docker-desktop)
+    - [Podman](https://podman.io/) [^1]
 
 
 
@@ -23,7 +23,7 @@ or
 <details>
 <summary> For Java Developers</summary>
 
-- Clone the Pet Clinic repository: https://github.com/azure-samples/spring-petclinic-microservices
+- Clone the Pet Clinic repository: https://github.com/spring-projects/spring-petclinic/
 </details>
 
 <details>
@@ -131,3 +131,5 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 ### Trademarks
 
 This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft trademarks or logos is subject to and must follow [Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/legal/intellectualproperty/trademarks/usage/general). Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship. Any use of third-party trademarks or logos are subject to those third-party's policies.
+
+[^1]: For more information, see [Container Runtime](https://learn.microsoft.com/en-us/dotnet/aspire/fundamentals/setup-tooling?tabs=linux%2Cunix&pivots=dotnet-cli#container-runtime)
