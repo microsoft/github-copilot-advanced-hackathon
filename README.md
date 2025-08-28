@@ -5,7 +5,7 @@ Developers today agree that AI code assistant tools are useful for easy, repeata
 
 ## Prerequisites
 
-- Clone the Spec Driven Coding Framework repository: https://github.com/seiggy/AI-Assisted-Coding
+- Clone the Spec Driven Coding Framework repository: https://github.com/ChrisMcKee1/AI-Assisted-Coding
 
 - [NodeJS 16+](https://nodejs.org/) for MCP servers
 - **Container Platform** An OCI compliant container runtime is recommended for .NET, and Python developers
