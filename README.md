@@ -1,16 +1,16 @@
-# Scenario : Advanced AI Pair Programming Challenge
+# Scenario : Spec Driven Development Programming Challenge
 
-Developers today agree that AI code assistant tools are useful for easy, repeatable tasks. JSON to Class, quick templated code, writing simple scripts. But most still think it's bad at more complex tasks. This exercise is here to show you that assumption is no longer as true as you might think!
+Developers today agree that AI code assistant tools are useful for easy, repeatable tasks. JSON to Class, quick templated code, writing simple scripts. But most still think it's bad at more complex tasks. This exercise is here to show you that assumption is no longer as true as you might think! Spec-driven development takes your skills as a Software Engineer and augments your AI Coding Assistant to build software *your* way.
 
 
 ## Prerequisites
 
-- Clone the AI Assisted Coding Framework repository: https://github.com/ChrisMcKee1/AI-Assisted-Coding
-- [Install & start Docker Desktop](https://docs.docker.com/get-started/get-docker/) 
+- Clone the Spec Driven Coding Framework repository: https://github.com/ChrisMcKee1/AI-Assisted-Coding
 
-or
-
-- [Install & Start Podman](https://podman.io/docs/installation)
+- [NodeJS 16+](https://nodejs.org/) for MCP servers
+- **Container Platform** An OCI compliant container runtime is recommended for .NET, and Python developers
+    - [Docker Desktop](https://www.docker.com/products/docker-desktop)
+    - [Podman](https://podman.io/) [^1]
 
 
 
@@ -23,7 +23,7 @@ or
 <details>
 <summary> For Java Developers</summary>
 
-- Clone the Pet Clinic repository: https://github.com/azure-samples/spring-petclinic-microservices
+- Clone the Pet Clinic repository: https://github.com/spring-projects/spring-petclinic/
 </details>
 
 <details>
@@ -131,3 +131,5 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 ### Trademarks
 
 This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft trademarks or logos is subject to and must follow [Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/legal/intellectualproperty/trademarks/usage/general). Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship. Any use of third-party trademarks or logos are subject to those third-party's policies.
+
+[^1]: For more information, see [Container Runtime](https://learn.microsoft.com/en-us/dotnet/aspire/fundamentals/setup-tooling?tabs=linux%2Cunix&pivots=dotnet-cli#container-runtime)
