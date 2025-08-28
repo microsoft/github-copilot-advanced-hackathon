@@ -1,41 +1,31 @@
 ## 🚀 Setting up the AI Assisted Coding Framework in your project
 
-This framework integrates two powerful MCP (Model Context Protocol) servers to supercharge your development workflow:
+This framework integrates several powerful MCP (Model Context Protocol) tools to supercharge your development workflow:
 
 - **Context7 MCP**: Provides live documentation and code snippet retrieval for authoritative technical references
 - **Memory MCP**: Delivers persistent project memory, decision tracking, and knowledge graph capabilities
+- **Sequential Thinking MCP**: Assists the LLM with ordering tasks, and breaking down complex ideas
+- **Microsoft.Learn MCP**: Give your LLM access to the entire Microsoft Learn knowledgebase!
 
 Together, they transform GitHub Copilot into an intelligent development assistant that remembers project context, tracks architectural decisions, and maintains comprehensive project knowledge across sessions.
 
 ## 📋 Prerequisites
 
 - **Node.js 16+** (for MCP tools)
-- **VS Code** with GitHub Copilot extension
+- **IDE** with GitHub Copilot[^1]
+- **Docker** is recommended, or you can use the devcontainer.
 - **Git** for version control
 
 ## 🛠️ Installation & Setup
 
-### Step 1: Clone and Copy Framework Files
+### Step 1: Clone The Framework Repository
 #### Windows Terminal:
 ```powershell
 # Clone this repository
 git clone https://github.com/ChrisMcKee1/AI-Assisted-Coding.git
-cd AI-Assisted-Coding
-
-# Copy all framework files to your project's root directory
-# Replace 'your-project-path' with the actual path to your project
-robocopy . "C:\path\to\your-project" /E /XD .git
 ```
 
-#### Linux / OSX Terminal:
-```bash
-git clone https://github.com/ChrisMcKee1/AI-Assisted-Coding.git
-cd AI-Assisted-Coding
-
-# Copy all framework files to your project's root directory
-# Replace '/path/to/your-project' with the actual path to your project
-rsync -av --exclude='.git' . /path/to/your-project/
-```
+We will use the files in this repository once you've setup your local workspace. Keep them somewhere easy to access, we recommend a folder such as `C:\github\` or `~/github` on Linux & OSX.
 
 ### Step 2 (optional): Change the MCP Configuration
 
@@ -49,26 +39,47 @@ See the [Sequential Thinking MCP Readme](https://github.com/modelcontextprotocol
 
 See the [Memory MCP Readme](https://github.com/modelcontextprotocol/servers/tree/main/src/memory) for details on how to configure it using Docker
 
-### Step 3: Open Project in VS Code
+> [!IMPORTANT] 
+> If you intend to do this, please do this before coming to the workshop, and ensure they are setup and configured. This can take time to setup and troubleshoot, so be prepared. Our recommendation is to use the NodeJS versions of the tools.
 
+### Step 3: Clone the Inventree Repository
+
+You'll be building this challenge using the popular Inventree demo repository. Clone the [Inventree](https://github.com/inventree/InvenTree) Repository from github to an easy to access location on your machine.
+
+### Step 4: Copy the Framework to the inventree repository
+
+Copy the `.github` and `.vscode` folders from the AI-Assisted-Coding repository to the root of your inventree repository. An example script below assumes you cloned both repositories to the root of `C:\github` or `~/github` respectively.
+
+#### Powershell
 ```powershell
-# Open your project in VS Code
-code .
+cd c:\github\AI-Assisted-Coding
+robocopy . "C:\github\inventree" /E /XD .git
 ```
-### Step 4: Run the Analyze Workflow
 
-Run the `/analyze-product` prompt to analyze your workspace and generate the documents that help the spec-driven development workflow operate smoothly.
+#### Bash
+```bash
+cd ~/github
+rsync -av --exclude='.git' . ~/github/inventree
+```
 
-### Step 5: Verify GitHub Copilot Integration
 
-1. Ensure GitHub Copilot extension is installed and activated
+### Step 5: Run the Analyze Workflow
+
+Open the inventree Solution using VS Code or your preferrred IDE.
+
+Run the `/analyze-product` prompt in Copilot Agent Mode to analyze your woskpace and generate the documents that help the spec-driven development workflow operate smoothly.
+
+### Step 6: Verify Framework setup is completed
+
+1. Answer any questions that the AI prompts you with, and wait for it to complete.
 2. The framework will automatically generate the `copilot-instructions.md` file
 3. The framework should also generate a series of files in a folder named `.docs`
+4. Review these documents for accuracy, and fix any problems you see.
 
 
-### Step 8: Have the AI conduct Architecture Review
+### Step 7: Follow the instructions from the `README.md` file to run inventree locally
 
-Have Copilot Create an Architecture Review of the repo. Take a look at the `README.md` in the AI Assisted Coding framework for help on how to conduct the Architecture review. When it completes, you should end up with a new folder named `architectureDiagrams` that contains 5 ore more markdown files with charts, documentation, and more about the eShop Application! Make sure you pass the #codebase token in your command, so that VS Code will give the AI access to the codebase for the context!
+Follow the instructions in the `README.md` file at the base of the inventree Repository to setup the application locally. You'll want to ensure that you can reach the application, search inventory, and manage suppliers.
 
 ## Next challenge
 

@@ -16,7 +16,7 @@ Your mission is to **design and document a new feature** for the InvenTree refer
 
 Before you begin, familiarize yourself with the existing InvenTree architecture by reviewing:
 
-- **Architecture Diagrams**: `architectureDiagrams/*.md` - Architecture documentation created by GitHub Copilot
+- **AI Generated documentation**: `docs/*.md` - Project and Architecture documentation created by GitHub Copilot
 - **Current Services**: Parts, Stock, Build, Orders, Reports, Admin
 - **Technology Stack**: Python 3.11, Django, React
 
@@ -34,161 +34,15 @@ Before you begin, familiarize yourself with the existing InvenTree architecture 
 ### 🎨 **Your Own Idea**
 Create something unique that fits the inventory management application and showcases modern software engineering practices.
 
-## 📝 Requirements Template
+## 📝 Requirements Generation
 
-Create a new markdown file named `feature-[your-feature-name].md` in a directory named `/backlog`. Here's a sample structure that can help! (also, see our example feature in the `exercise-files` folder!):
+Pass your idea with as much detail as you'd like to the `/create-spec` prompt. The AI will then generate a `.docs/specs` folder, with a specification detailing what it understands of your requirements. You will want to go through all of these documents, and correct any mistakes, add anything it missed, or take off features and functionality you don't want it to implement.
 
-```markdown
-# Feature: [Your Feature Name]
-
-## 📖 Executive Summary
-
-### Business Value
-- [ ] **Problem Statement**: What business problem does this solve?
-- [ ] **Target Users**: Who will use this feature?
-- [ ] **Success Metrics**: How will you measure success?
-- [ ] **Business Impact**: Revenue, user engagement, operational efficiency?
-
-### Technical Alignment
-- [ ] **Architecture Fit**: How does this align with the microservices architecture?
-- [ ] **Service Boundaries**: Which services will be affected or created?
-- [ ] **Data Ownership**: Which service owns the feature's data?
-
-## 🎯 Feature Requirements
-
-### Functional Requirements
-1. **[Requirement ID]**: [Clear, testable requirement]
-   - **Acceptance Criteria**: 
-     - Given [context]
-     - When [action]
-     - Then [expected outcome]
-   - **Priority**: Must Have / Should Have / Could Have / Won't Have
-
-2. **[Next Requirement]**...
-
-### Non-Functional Requirements
-- **Performance**: Response time, throughput expectations
-- **Scalability**: Expected load, growth patterns
-- **Security**: Authentication, authorization, data protection
-- **Reliability**: Availability, error handling, recovery
-- **Usability**: User experience considerations
-
-## 🏗️ Technical Design
-
-### Service Architecture
-- **New Services**: What new microservices need to be created?
-- **Modified Services**: Which existing services need changes?
-- **Service Communication**: How will services communicate? (sync/async)
-- **Data Flow**: Map the data flow through your feature
-
-### Database Design
-- **New Tables/Collections**: Schema design
-- **Data Relationships**: How does your data relate to existing entities?
-- **Migration Strategy**: How will you handle schema changes?
-
-### Event Design
-- **Domain Events**: What events will your feature publish?
-- **Integration Events**: How will you integrate with other services?
-- **Event Handlers**: What background processing is needed?
-
-### API Design
-
-# Example API endpoints
-
-GET /api/[service]/[resource]
-POST /api/[service]/[resource]
-PUT /api/[service]/[resource]/{id}
-DELETE /api/[service]/[resource]/{id}
-
-## 🔄 Implementation Roadmap
-
-### Phase 1: Foundation (Week 1-2)
-- [ ] Service scaffolding
-- [ ] Database schema
-- [ ] Basic CRUD operations
-
-### Phase 2: Core Features (Week 3-4)
-- [ ] Business logic implementation
-- [ ] Event integration
-- [ ] API development
-
-### Phase 3: Integration (Week 5-6)
-- [ ] Frontend integration
-- [ ] Service communication
-- [ ] End-to-end testing
-
-### Phase 4: Polish (Week 7-8)
-- [ ] Performance optimization
-- [ ] Security hardening
-- [ ] Documentation
-
-## 🧪 Testing Strategy
-
-### Unit Testing
-- [ ] Service layer tests
-- [ ] Domain logic tests
-- [ ] Repository tests
-
-### Integration Testing
-- [ ] API endpoint tests
-- [ ] Database integration tests
-- [ ] Event handler tests
-
-### End-to-End Testing
-- [ ] User workflow tests
-- [ ] Cross-service integration tests
-- [ ] Performance tests
-
-## 📊 Monitoring & Observability
-
-### Metrics
-- [ ] Business metrics to track
-- [ ] Technical metrics to monitor
-- [ ] SLA/SLO definitions
-
-### Logging
-- [ ] Structured logging requirements
-- [ ] Log correlation across services
-- [ ] Security audit logging
-
-### Alerting
-- [ ] Critical alerts
-- [ ] Performance degradation alerts
-- [ ] Business metric alerts
-
-## 🚨 Risk Assessment
-
-### Technical Risks
-- **Risk**: [Description]
-  - **Probability**: High/Medium/Low
-  - **Impact**: High/Medium/Low
-  - **Mitigation**: [Strategy]
-
-### Business Risks
-- **Risk**: [Description]
-  - **Mitigation**: [Strategy]
-
-## 🎓 Decision Log
-
-Use this section to document key decisions made during feature design:
-
-### Decision 1: [Title]
-- **Context**: Why was this decision needed?
-- **Options Considered**: What alternatives were evaluated?
-- **Decision**: What was chosen?
-- **Rationale**: Why was this the best choice?
-- **Consequences**: What are the implications?
-
-## 📚 References
-
-- [ ] External APIs or services referenced
-- [ ] Design patterns used
-- [ ] Industry best practices followed
-- [ ] Performance benchmarks
-```
+  > [!IMPORTANT]
+  > Try to be specific! Don't just tell the AI: "add a rewards system", give it details, such as: `create a customer loyalty program where for every $1 spent on the store, the customer earns 10 points. And for each 1,000 points the customer can redeem those points for $10 off their next purchase. Show the customer's point balance on their profile. And show the number of points earned under each item on the product page`
 
   > [!TIP]
-  > Try using Copilot to have it write your requirements for you! Copy the template, and surround it with <|TEMPLATE_START|><|TEMPLATE_END|>, and describe to the AI the Feature you'd like to plan! Then review and edit the generated markdown file to ensure that it matches what you want!
+  > Super-pro tip! You can create your requirements in a markdown file and then reference it to the AI in the same way we've referenced other files. We have a sample requirements-template.md file in this repository that has a great starter template to use for feeding detailed requirements to GitHub Copilot! [Check it out!](../../requirements-template.md)
 
 ## ✅ Success Criteria
 
@@ -243,23 +97,23 @@ Your feature requirements document should demonstrate:
 
 Remember: **Good requirements are the foundation of great software**. Take your time to think through the problem space before jumping into solutions. The InvenTree application is a reference for modern software engineering practices—your feature should exemplify the same level of thoughtfulness and technical excellence.
 
-**Start by creating your feature file and begin documenting your thinking process. Use Chat mode to help you if you're stuck!**
+**Once you have a well defined specification, you can start work!**
 
-When you're created your requirements file, prompt Copilot in Agent Mode:
+When you're created your specs, prompt Copilot in Agent Mode:
 
-`Plan #feature-[your-feature-name].md`
+`/execute-tasks`
 
-This should trigger the planning process. The AI should validate and produce an implementation plan, and ask if you're ready to start! When you're ready to continue:
+You can pass it alone, or reference the specific task id from the `tasks.md` file you'd like to start with. Remember to help the AI keep track of completed tasks, so that you can easily start new conversations as context windows fill up. You can have the AI pickup on a specific task id, and sub-task with the same command:
 
-`Act: #feature-[your-feature-name].md`
+`/execute-task Resume 03bd0240-fdcc-48a9-832c-71c44193a375 task 1.10`
 
 From here, the AI will begin implementing your feature. Ensure you interact with the AI often, running unit tests, building and validating it's progress, provide feedback. Continue to use this process as you go until your feature is completed!
 ```mermaid
 flowchart LR
-  Plan[Plan<br/>#story] --> Act[Act<br/>#story]
-  Act --> Status[Status<br/>#story]
-  Status --> Debug[Debug<br/>#story]
-  Debug --> Plan
+  Plan[Plan<br/>/create-spec] --> Act[Act<br/>/execute-tasks]
+  Act --> Status[Status<br/>/generate-report]
+  Status --> Debug[Debug<br/>/startDebugging]
+  Debug --> Act
   style Plan stroke:#4F8EF7,stroke-width:2px
   style Act stroke:#4F8EF7,stroke-width:2px
   style Status stroke:#4F8EF7,stroke-width:2px
