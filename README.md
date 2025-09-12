@@ -1,3 +1,8 @@
+---
+layout: page
+title: Spec Driven Development Hackathon
+permalink: /github-copilot-advanced-hackathon
+---
 # Scenario : Spec Driven Development Programming Challenge
 
 Developers today agree that AI code assistant tools are useful for easy, repeatable tasks. JSON to Class, quick templated code, writing simple scripts. But most still think it's bad at more complex tasks. This exercise is here to show you that assumption is no longer as true as you might think! Spec-driven development takes your skills as a Software Engineer and augments your AI Coding Assistant to build software *your* way.
