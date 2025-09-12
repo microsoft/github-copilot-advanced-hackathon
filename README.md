@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Spec Driven Development Hackathon
-permalink: /github-copilot-advanced-hackathon
+permalink: /
 ---
 # Scenario : Spec Driven Development Programming Challenge
 
