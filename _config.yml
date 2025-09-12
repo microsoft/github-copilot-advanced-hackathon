@@ -1,16 +1,7 @@
 # Where things are
 source              : .
 destination         : ./_site
-collections_dir     : .
-plugins_dir         : _plugins # takes an array of strings and loads plugins in that order
-layouts_dir         : _layouts
-data_dir            : _data
-includes_dir        : _includes
-sass:
-  sass_dir: _sass
-collections:
-  posts:
-    output          : true
+baseurl: "/github-copilot-advanced-hackathon"
 
 # Handling Reading
 safe                : true
@@ -29,7 +20,7 @@ unpublished         : false
 
 # Plugins
 whitelist           : []
-plugins             : []
+plugins             : [jekyll-remote-theme, jemoji]
 
 # Conversion
 markdown            : kramdown
@@ -37,13 +28,6 @@ highlighter         : rouge
 lsi                 : false
 excerpt_separator   : "\n\n"
 incremental         : false
-
-# Serving
-detach              : false
-port                : 4000
-host                : 127.0.0.1
-baseurl             : "" # does not include hostname
-show_dir_listing    : false
 
 # Outputting
 permalink           : date
@@ -73,3 +57,4 @@ kramdown:
   syntax_highlighter: rouge
 
 theme: jekyll-theme-hacker
+remote_theme: pages-themes/hacker@v0.2.0
