@@ -2,7 +2,7 @@
 
 ## 🎯 Challenge Overview
 
-Your mission is to **design and document a new feature** for the PetClinic reference application. This challenge will teach you how to write comprehensive feature requirements that integrate seamlessly with the ConPort workflow and architectural patterns we've created.
+Your mission is to **design and document a new feature** for the PetClinic reference application. This challenge will teach you how to write comprehensive feature requirements that integrate seamlessly with the Spec-Driven workflow and architectural patterns we've created.
 
 ## 📋 What You'll Learn
 
@@ -17,20 +17,45 @@ Your mission is to **design and document a new feature** for the PetClinic refer
 Before you begin, familiarize yourself with the existing PetClinic architecture by reviewing:
 
 - **AI Generated documentation**: `docs/*.md` - Project and Architecture documentation created by GitHub Copilot
-- **Current Services**: Identity, Catalog, Basket, Ordering, Webhooks, Mobile.BFF
-- **Technology Stack**: .NET 9, Aspire, PostgreSQL, Redis, RabbitMQ, Blazor
+- **Areas**: Models, Owner, Vet, and System namespaces, along with the resources folder templates
+- **Technology Stack**: Java 17, Spring Boot 3.5, Maven build. Thymeleaf View. Spring Data JPA with H2 database. Caffeine for caching. JUnit 5, and Spring Boot Test for unit testing.
 
 ## 🎲 Feature Ideas (Choose One or Create Your Own)
 
 ### 💡 **Beginner Level**
 - **Pet Profile**: Add the ability to upload a photo for a customer's pet
+- **Pet Age Calculator**: Take the birthday of the pet, and calculate the age of the pet on the profile view. Show intelligent age, such as "1 year", "3 months", "1 year, 6 months", etc.
+- **Visit Notes Enhancement**: Add rich text description field for visit notes with character counter
+- **Owner Email Field**: Add optional email field to owner contact information with validation
+- **Pet Weight Tracking**: Add weight field to pet profile with optional unit selection (lbs/kg)
+- **Visit Cost Display**: Add read-only cost field to visits for billing reference
+- **Vet Availability Status**: Add "Available/Busy" status indicator on vet list page
+- **Search Enhancement**: Add search by phone number on the find owners page
 
 ### 🔥 **Intermediate Level**
 - **Veterinarian Schedule**: Veterinarian appointment schedule view
 - **Loyalty Program**: Points-based rewards system with tier benefits
+- **Pet Medical History**: Comprehensive medical records with vaccination tracking and medication history
+- **Appointment Reminders**: Email reminder system for upcoming visits (24h, 1 week advance)
+- **Bulk Visit Operations**: Select multiple visits for batch operations (reschedule, cancel)
+- **Owner Dashboard**: Personalized dashboard showing pet health summaries and upcoming appointments
+- **Vet Specialization Search**: Filter and search veterinarians by their specialties
+- **Pet Care Instructions**: Post-visit care instructions with downloadable PDF generation
+- **Advanced Reporting**: Generate clinic reports (visit trends, revenue, popular services)
+- **Online Appointment Booking**: Public-facing booking system with available time slots
+- **Pet Boarding Services**: Track boarding stays with check-in/check-out and special care notes
+- **Emergency Contact System**: Multiple emergency contacts per owner with relationship types
+- **Treatment Plan Templates**: Reusable treatment protocols for common conditions
+
 
 ### 🚀 **Advanced Level**
-- **Real-time Notifications**: Notify the customer using SMS when their next appointment is!
+- **Real-time Notifications**: Notify the customer using SMS when their next appointment is. Use Azure Communication Services to send yourself a SMS message when your appointment is less than 24 hours away.
+- **Microservice Architecture**: Split application into separate services (owners, appointments, billing) with API gateway
+- **Advanced Analytics Dashboard**: Business intelligence with charts, trends, and predictive analytics using Chart.js
+- **Multi-Tenant Clinic System**: Support multiple independent clinics with data isolation and custom branding
+- **Mobile App Integration**: REST API backend to support iOS/Android mobile applications
+- **AI-Powered Health Insights**: Integration with veterinary AI services for health recommendations and alerts
+- **Inventory Management**: Track medical supplies, medications, and equipment with low-stock alerts
 
 ### 🎨 **Your Own Idea**
 Create something unique that fits the veterinarian domain and showcases modern software engineering practices.
