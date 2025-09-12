@@ -12,8 +12,8 @@ Together, they transform GitHub Copilot into an intelligent development assistan
 ## 📋 Prerequisites
 
 - **Node.js 16+** (for MCP tools)
+- **Node.js 14-16** for Angular App
 - **IDE** with GitHub Copilot[^1]
-- **Docker** is recommended, or you can use the devcontainer.
 - **Git** for version control
 
 ## 🛠️ Installation & Setup
