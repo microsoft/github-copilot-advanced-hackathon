@@ -18,22 +18,32 @@ Before you begin, familiarize yourself with the existing ngLibrary architecture 
 
 - **AI Generated documentation**: `docs/*.md` - Project and Architecture documentation created by GitHub Copilot
 - **Current Modules**: App, Books, Cart, Checkout, Layouts, Core
-- **Technology Stack**: Typescript 4, Angular 11
+- **Technology Stack**: Typescript 4, Angular 11, Node.js 14-16 compatible
 
 ## 🎲 Feature Ideas (Choose One or Create Your Own)
 
 ### 💡 **Beginner Level**
-- **Book Reviews & Ratings**: Allow customers to review and rate books
-- **Wishlist Management**: Save books for later checkout
-- **Book Recommendations**: "Customers who read this book this also read..."
+- **GoodReads Library Import**: Import a list of books from a GoodReads export to update the list of available books.
+- **Replace the OpenLibrary Data**: OpenLibrary.org has performance problems. Pull the images and use Azure Storage account (or local Azurite emulator) to server the book images instead.
+- **Add Series to book model**: Add the Series name to the book model to support multiple books in a series.
+- **Add book description to the book view**: Add the description of the book to the fly-out book view.
+
 
 ### 🔥 **Intermediate Level**
-- **Inventory Management**: Real-time stock tracking with low-stock alerts
+- **Update App to Angular 20**: Update the application and dependencies to Angular 20
+- **Inventory Management**: Add a "Library admin" page to add / remove books from inventory.
 - **Advanced Search**: Faceted search with filters, sorting, and autocomplete
-- **Loyalty Program**: Points-based rewards system with tier benefits
+- **User Profile**: Allow users to sign up, using OAuth 2.0 integration. Track book check-outs against user profile.
+- **Integrate Hardcover API**: https://docs.hardcover.app/api/getting-started/ pull reviews, featured books, track user checkouts.
+- **Add Author model**: Create author model and refactor app to seperate Author in it's own data model
+- **Add Genre model**: Create Genre model and refactor app to seperate Genre in it's own data model
 
 ### 🚀 **Advanced Level**
+- **Migrate app to React 18+**: Convert the app to a React v18 app instead
 - **Real-time Notifications**: WebSocket-based book availability updates
+- **Native Mobile app**: Use Capacitor or a similar project to build a PWA mobile app to access the library.
+- **Book Reviews & Ratings**: Allow customers to review and rate books
+- **Book Recommendations**: "Customers who read this book this also read..." using AI to find similar books from the library. Have the AI generate a reason as to why they might like to read this book.
 
 ### 🎨 **Your Own Idea**
 Create something unique that fits the library management domain and showcases modern software engineering practices.

@@ -5,7 +5,6 @@ This framework integrates several powerful MCP (Model Context Protocol) tools to
 - **Context7 MCP**: Provides live documentation and code snippet retrieval for authoritative technical references
 - **Memory MCP**: Delivers persistent project memory, decision tracking, and knowledge graph capabilities
 - **Sequential Thinking MCP**: Assists the LLM with ordering tasks, and breaking down complex ideas
-- **Microsoft.Learn MCP**: Give your LLM access to the entire Microsoft Learn knowledgebase!
 
 Together, they transform GitHub Copilot into an intelligent development assistant that remembers project context, tracks architectural decisions, and maintains comprehensive project knowledge across sessions.
 

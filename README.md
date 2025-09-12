@@ -47,7 +47,7 @@ Developers today agree that AI code assistant tools are useful for easy, repeata
    - C#
    - Java (Spring-boot)
    - Python
-   - Typescript
+   - Typescript (Angular - ready, React - coming soon)
 
 ### Software
 
