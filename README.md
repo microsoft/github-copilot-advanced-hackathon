@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Spec Driven Development Hackathon
 permalink: /
 ---
