@@ -66,19 +66,21 @@ You'll be building this challenge using the popular eShop demo repository from M
 
 ### Step 4: Init Spec-Kit in the repo
 
-Next we need to bootstrap the project. From a Terminal, first navigate to where you cloned the repo, then run the following:
+Next we need to bootstrap the project. Navigate to where you cloned the repo, then run the following:
 
 #### Powershell
 ```powershell
+cd C:\github\eShop
 specify init --here --integration copilot
 ```
 
 #### Bash
 ```bash
+cd ~/github/eShop
 specify init --here --integration copilot
 ```
 
-### Step 5: Establish project principals
+### Step 5: Establish project principles
 
 Open the eShop Solution using VS Code or your preferrred IDE.
 
@@ -99,7 +101,7 @@ Run the `/speckit.constitution` prompt below in Copilot Agent Mode to analyze yo
 ### Step 6: Verify Framework setup is completed
 
 1. Answer any questions that the AI prompts you with, and wait for it to complete.
-2. The framework will automatically generate the `copilot-instructions.md` file
+2. The framework will automatically generate the `.github/copilot-instructions.md` file
 3. The framework should also generate a series of files in a folder named `.specify`
 4. Review these documents for accuracy, and fix any problems you see.
 

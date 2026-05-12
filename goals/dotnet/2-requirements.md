@@ -57,7 +57,7 @@ Before you begin, familiarize yourself with the existing eShop architecture by r
 ### 🎨 **Your Own Idea**
 Create something unique that fits the e-commerce domain and showcases modern software engineering practices.
 
-## �� Requirements Generation
+## 📝 Requirements Generation
 
 Pass your idea with as much detail as you'd like to the `/speckit.specify` prompt. Copilot will generate a `.specify/specs/` folder with a specification detailing what it understands of your requirements. Go through all generated documents, correct any mistakes, add anything it missed, or remove features and functionality you don't want implemented.
 
