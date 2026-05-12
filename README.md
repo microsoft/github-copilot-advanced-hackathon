@@ -9,12 +9,25 @@ Developers today agree that AI code assistant tools are useful for easy, repeata
 
 ## Prerequisites
 
-- Clone the Spec Driven Coding Framework repository: https://github.com/ChrisMcKee1/AI-Assisted-Coding
-
+- **[Spec-Kit](https://github.com/github/spec-kit)** — install the `specify` CLI (see below)
 - [NodeJS 16+](https://nodejs.org/) for MCP servers
+- [Python UV](https://docs.astral.sh/uv/) — required to install Spec-Kit
+- [Python 3.11+](https://www.python.org/downloads/)
 - **Container Platform** An OCI compliant container runtime is recommended for .NET, and Python developers
     - [Docker Desktop](https://www.docker.com/products/docker-desktop)
     - [Podman](https://podman.io/) [^1]
+
+### Install Spec-Kit
+
+Install the `specify` CLI once and use it across all your projects:
+
+```powershell
+# Recommended: install a pinned stable release
+uv tool install specify-cli --from git+https://github.com/github/spec-kit.git@v0.8.7
+
+# Verify installation
+specify version
+```
 
 
 
@@ -137,3 +150,10 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft trademarks or logos is subject to and must follow [Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/legal/intellectualproperty/trademarks/usage/general). Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship. Any use of third-party trademarks or logos are subject to those third-party's policies.
 
 [^1]: For more information, see [Container Runtime](https://learn.microsoft.com/en-us/dotnet/aspire/fundamentals/setup-tooling?tabs=linux%2Cunix&pivots=dotnet-cli#container-runtime)
+
+| Option | Description |
+|--------|-------------| 
+| A | Manual status updates - Users/Developers manually change spec status through a dropdown or status button. No automatic transitions. | 
+| B | Automatic transitions with triggers - Status changes automatically: Open→In Progress when Developer claims spec, In Progress→Completed when PR is merged, manual override allowed for edge cases. | 
+| C | Workflow-based with approval - Status changes require specific workflow steps: User completes spec → Developer claims → User approves transition to In Progress → PR merged → Auto-complete. | 
+| D | Git-branch-based status - Status derived from Git state: Open (branch exists, no PR), In Progress (PR open), Completed (PR merged). No manual status field. |
