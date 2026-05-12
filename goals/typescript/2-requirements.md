@@ -18,7 +18,7 @@ Before you begin, review:
 
 - **Spec-Kit documentation**: `.specify/memory/constitution.md` — your project governing principles
 - **Current Modules**: App, Books, Cart, Checkout, Layouts, Core
-- **Technology Stack**: TypeScript 4, Angular 11, Node.js 14-16 compatible
+- **Technology Stack**: TypeScript 4, Angular 11, Node.js 16+
 
 ## Feature Ideas (Choose One or Create Your Own)
 

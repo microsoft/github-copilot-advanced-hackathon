@@ -11,7 +11,7 @@
 - **Approve Carefully**  
   Always review and test generated code; Copilot can sometimes hallucinate or suggest insecure patterns.
 - **Combine with Documentation**  
-  Remind the AI to reach out to Context7 on the regular to validate it's thoughts and plans against real documentation.
+  Remind the AI to reach out to Context7 on the regular to validate its thoughts and plans against real documentation.
 
 ## Workflow-Specific Tips for Spec-Kit
 

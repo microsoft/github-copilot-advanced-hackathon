@@ -21,7 +21,7 @@ Before you begin, familiarize yourself with the existing eShop architecture by r
 ```text
 └── .specify
     ├── memory
-    │ └── constitution.md
+    │    └── constitution.md
     ├── scripts
     │ ├── check-prerequisites.sh
     │ └── common.sh

@@ -61,7 +61,7 @@ You'll be building this challenge using the popular eShop demo repository from M
 
 Next we need to bootstrap the project. Navigate to where you cloned the repo, then run the following:
 
-#### Powershell
+#### PowerShell
 ```powershell
 cd C:\github\eShop
 specify init --here --integration copilot
@@ -87,7 +87,7 @@ Run the `/speckit.constitution` prompt below in Copilot Agent Mode to analyze yo
 > If you are using Visual Studio 2022 or 2026, use the `#prompts:` shortcut to bring up the prompts. You should be able to reference the specify commands this way. Such as `#prompts:speckit.constitution`
 
 > [!NOTE]
-> If you are using Jebrains Rider, you will need to manually reference the file by dragging it from the file system window, or by right-clicking, and using the context menu to reference the file in chat.
+> If you are using JetBrains Rider, you will need to manually reference the file by dragging it from the file system window, or by right-clicking, and using the context menu to reference the file in chat.
 
 ![Rider Context Menu](../../screenshots/rider_context_menu.png)
 
@@ -108,4 +108,4 @@ Follow the instructions in the `README.md` file at the base of the eShop Reposit
 Now that you've setup the AI to be able to better understand and work within your repository, it's time to [understand how to write requirements!](./2-requirements.md)
 
 [^1]: For more information, see [Container Runtime](https://learn.microsoft.com/en-us/dotnet/aspire/fundamentals/setup-tooling?tabs=linux%2Cunix&pivots=dotnet-cli#container-runtime)
-[^2]: _VS Code supports all features, Visual Studio 2022 17.14.13 and Jetbrains IDEs require workarounds noted through the workshop_
+[^2]: _VS Code supports all features, Visual Studio 2022 17.14.13 and JetBrains IDEs require workarounds noted through the workshop_
