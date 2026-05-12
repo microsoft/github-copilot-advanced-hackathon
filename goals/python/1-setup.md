@@ -98,7 +98,7 @@ Run the `/speckit.constitution` prompt in Copilot Agent Mode to analyze your wor
 > [!NOTE]
 > If you are using JetBrains PyCharm, you will need to manually reference the prompt file by dragging it from the file system window, or by right-clicking and using the context menu to reference the file in chat.
 
-### Step 6: Verify Framework Setup Is Completed
+### Step 6: Verify Spec-Kit Setup Is Completed
 
 1. Answer any questions that Copilot prompts you with, and wait for it to complete.
 2. Confirm that `.github/copilot-instructions.md` has been created (or updated).

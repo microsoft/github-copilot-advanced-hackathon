@@ -24,10 +24,7 @@ Before you begin, familiarize yourself with the existing eShop architecture by r
     │ └── constitution.md
     ├── scripts
     │ ├── check-prerequisites.sh
-    │ ├── common.sh
-    │ ├── create-new-feature.sh
-    │ ├── setup-plan.sh
-    │ └── update-claude-md.sh
+    │ └── common.sh
     ├── specs
     └── templates
         ├── plan-template.md
@@ -186,4 +183,4 @@ flowchart LR
 *This challenge is designed to simulate real-world feature development while teaching best practices for requirements documentation and architectural thinking. Focus on quality over speed—the goal is learning, not just completion.*
 
 ## Tips & Tricks
-Check out the [Tips & Tricks](../3-tips.md) for a collection of common challenges and solutions we've faced and solved ourselves using this framework!
+Check out the [Tips & Tricks](../3-tips.md) for a collection of common challenges and solutions we've faced and solved ourselves using Spec-Kit!

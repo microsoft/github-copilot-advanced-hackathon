@@ -94,7 +94,7 @@ Run the `/speckit.constitution` prompt in Copilot Agent Mode to analyze your wor
 /speckit.constitution Create principles focused on code quality, testing standards, user experience consistency, and performance requirements. Include governance for how these principles should guide technical decisions and implementation choices.
 ```
 
-### Step 6: Verify Framework Setup Is Completed
+### Step 6: Verify Spec-Kit Setup Is Completed
 
 1. Answer any questions that Copilot prompts you with, and wait for it to complete.
 2. Confirm that `.github/copilot-instructions.md` has been created (or updated).

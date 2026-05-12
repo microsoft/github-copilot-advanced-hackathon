@@ -90,4 +90,4 @@
 
 ---
 
-*These tips aim to empower your AI Assisted Coding experience and help you avoid common frustrations. Happy coding!*
+*These tips aim to empower your Spec-Driven Development experience with Spec-Kit and help you avoid common frustrations. Happy coding!*

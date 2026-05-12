@@ -21,11 +21,21 @@ Developers today agree that AI code assistant tools are useful for easy, repeata
 
 Install the `specify` CLI once and use it across all your projects:
 
+#### Windows (PowerShell)
 ```powershell
 # Recommended: install a pinned stable release
 uv tool install specify-cli --from git+https://github.com/github/spec-kit.git@v0.8.7
+```
 
-# Verify installation
+#### macOS / Linux (Bash)
+```bash
+# Recommended: install a pinned stable release
+uv tool install specify-cli --from git+https://github.com/github/spec-kit.git@v0.8.7
+```
+
+Verify installation:
+
+```bash
 specify version
 ```
 

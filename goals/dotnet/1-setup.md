@@ -1,13 +1,6 @@
-## 🚀 Setting up the AI Assisted Coding Framework in your project
+## 🚀 Setting up Spec-Kit in your project
 
-This framework integrates several powerful MCP (Model Context Protocol) tools to supercharge your development workflow:
-
-- **Context7 MCP**: Provides live documentation and code snippet retrieval for authoritative technical references
-- **Memory MCP**: Delivers persistent project memory, decision tracking, and knowledge graph capabilities
-- **Sequential Thinking MCP**: Assists the LLM with ordering tasks, and breaking down complex ideas
-- **Microsoft.Learn MCP**: Give your LLM access to the entire Microsoft Learn knowledgebase!
-
-Together, they transform GitHub Copilot into an intelligent development assistant that remembers project context, tracks architectural decisions, and maintains comprehensive project knowledge across sessions.
+[Spec-Kit](https://github.com/github/spec-kit) brings Spec-Driven Development to your workflow, giving GitHub Copilot structured context through specifications, implementation plans, and task breakdowns — all version-controlled alongside your code.
 
 ## 📋 Prerequisites
 
@@ -82,9 +75,9 @@ specify init --here --integration copilot
 
 ### Step 5: Establish project principles
 
-Open the eShop Solution using VS Code or your preferrred IDE.
+Open the eShop Solution using VS Code or your preferred IDE.
 
-Run the `/speckit.constitution` prompt below in Copilot Agent Mode to analyze your woskpace and generate the documents that help the spec-driven development workflow operate smoothly.
+Run the `/speckit.constitution` prompt below in Copilot Agent Mode to analyze your workspace and generate the documents that help the spec-driven development workflow operate smoothly.
 
 ```text
 /speckit.constitution Create principles focused on code quality, testing standards, user experience consistency, and performance requirements. Include governance for how these principles should guide technical decisions and implementation choices.
@@ -98,11 +91,11 @@ Run the `/speckit.constitution` prompt below in Copilot Agent Mode to analyze yo
 
 ![Rider Context Menu](../../screenshots/rider_context_menu.png)
 
-### Step 6: Verify Framework setup is completed
+### Step 6: Verify Spec-Kit setup is completed
 
 1. Answer any questions that the AI prompts you with, and wait for it to complete.
-2. The framework will automatically generate the `.github/copilot-instructions.md` file
-3. The framework should also generate a series of files in a folder named `.specify`
+2. Spec-Kit will automatically generate the `.github/copilot-instructions.md` file
+3. Spec-Kit should also generate a series of files in a folder named `.specify`
 4. Review these documents for accuracy, and fix any problems you see.
 
 
