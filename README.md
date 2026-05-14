@@ -65,7 +65,9 @@ specify version
 - Clone the https://github.com/mrWh1te/ngLibrary repository: 
 </details>
 
-### Skills
+### Technical Capabilities Prequisites:
+
+In order to complete the labs in this hackathon, we expect you to be proficient with the following technical capabilities:
 
 - Git and GitHub
   - [Cloning](https://docs.github.com/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository) repositories
@@ -74,7 +76,7 @@ specify version
    - C#
    - Java (Spring-boot)
    - Python
-   - Typescript (Angular - ready, React - coming soon)
+   - TypeScript (Angular - ready, React - coming soon)
 
 ### Software
 
