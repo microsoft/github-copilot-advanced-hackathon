@@ -1,16 +1,15 @@
 ---
-title: AI-Assisted Coding Challenges
-description: Central index of language-specific onboarding challenges and guidance for the AI-Assisted Coding framework.
+title: Spec-Driven Development Challenges
+description: Central index of language-specific onboarding challenges and guidance for the Spec-Driven Development framework powered by Spec-Kit.
 ---
 
 # 🧭 Challenge Index
 
-Welcome! This hub lists the starting points for each language track in the AI-Assisted Coding framework.  
+Welcome! This hub lists the starting points for each language track in the Spec-Driven Development framework powered by **[Spec-Kit](https://github.com/github/spec-kit)**.  
 Pick the tech stack you care about and begin with its Setup challenge. Each track follows the same progression:
 
-1. Setup & Framework Integration (`1-setup.md`)
-2. Writing Effective Requirements (`2-requirements.md`)
-3. Project Brief Customization (`projectBrief.md`)
+1. Install Spec-Kit & initialize your project (`1-setup.md`)
+2. Writing Effective Requirements with Spec-Kit (`2-requirements.md`)
 
 Need general improvement tips? Jump to the Tips section below.
 
@@ -29,10 +28,10 @@ Need general improvement tips? Jump to the Tips section below.
 
 ## ✨ Recommended Flow
 
-1. Open a language track’s `1-setup.md` and follow the framework integration steps.
-2. Generate or refine an Architecture Review (see setup instructions for guidance).
-3. Proceed to the `2-requirements.md` file to practice writing concise, AI-friendly requirements.
-4. Tailor the `projectBrief.md` to your actual project—this greatly improves AI recall and guidance.
+1. Open a language track's `1-setup.md` and install Spec-Kit, then initialize it in your demo repo.
+2. Run `/speckit.constitution` to establish your project's governing principles.
+3. Proceed to `2-requirements.md` to practice writing concise, AI-friendly requirements with `/speckit.specify`.
+4. Use `/speckit.clarify` → `/speckit.plan` → `/speckit.tasks` → `/speckit.implement` to build your feature.
 
 ---
 
@@ -46,11 +45,11 @@ Looking for productivity boosters, prompt strategies, or refinement tactics?
 
 ## 🧪 What the AI Is Learning
 
-As you move through the challenges, the AI-assisted workflow builds:
-- Persistent memory of architectural decisions
-- Rich project brief context
-- A knowledge graph (via memory mcp) for cross-file reasoning
-- Faster retrieval of documentation (via Context7 and Microsoft.Learn MCP)
+As you move through the challenges, the Spec-Kit workflow builds:
+- Persistent memory of architectural decisions via the `.specify/memory/` folder
+- Project principles documented in `constitution.md`
+- Structured specs, implementation plans, and task breakdowns in `.specify/specs/`
+- Faster iteration by keeping specification and code in sync
 
 Use this to:
 - Iterate faster on specs before coding

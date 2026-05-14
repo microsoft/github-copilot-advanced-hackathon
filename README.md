@@ -9,12 +9,35 @@ Developers today agree that AI code assistant tools are useful for easy, repeata
 
 ## Prerequisites
 
-- Clone the Spec Driven Coding Framework repository: https://github.com/ChrisMcKee1/AI-Assisted-Coding
-
+- **[Spec-Kit](https://github.com/github/spec-kit)** — install the `specify` CLI (see below)
 - [NodeJS 16+](https://nodejs.org/) for MCP servers
+- [Python UV](https://docs.astral.sh/uv/) — required to install Spec-Kit
+- [Python 3.11+](https://www.python.org/downloads/)
 - **Container Platform** An OCI compliant container runtime is recommended for .NET, and Python developers
     - [Docker Desktop](https://www.docker.com/products/docker-desktop)
     - [Podman](https://podman.io/) [^1]
+
+### Install Spec-Kit
+
+Install the `specify` CLI once and use it across all your projects:
+
+#### Windows (PowerShell)
+```powershell
+# Recommended: install a pinned stable release
+uv tool install specify-cli --from git+https://github.com/github/spec-kit.git@v0.8.7
+```
+
+#### macOS / Linux (Bash)
+```bash
+# Recommended: install a pinned stable release
+uv tool install specify-cli --from git+https://github.com/github/spec-kit.git@v0.8.7
+```
+
+Verify installation:
+
+```bash
+specify version
+```
 
 
 
@@ -42,7 +65,9 @@ Developers today agree that AI code assistant tools are useful for easy, repeata
 - Clone the https://github.com/mrWh1te/ngLibrary repository: 
 </details>
 
-### Skills
+### Technical Capabilities Prequisites:
+
+In order to complete the labs in this hackathon, we expect you to be proficient with the following technical capabilities:
 
 - Git and GitHub
   - [Cloning](https://docs.github.com/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository) repositories
@@ -51,7 +76,7 @@ Developers today agree that AI code assistant tools are useful for easy, repeata
    - C#
    - Java (Spring-boot)
    - Python
-   - Typescript (Angular - ready, React - coming soon)
+   - TypeScript (Angular - ready, React - coming soon)
 
 ### Software
 

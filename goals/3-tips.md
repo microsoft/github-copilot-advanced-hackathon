@@ -1,4 +1,4 @@
-# Tips & Tricks for AI Assisted Coding with GitHub Copilot
+# Tips & Tricks for Spec-Driven Development with GitHub Copilot and Spec-Kit
 
 ## General Best Practices
 
@@ -11,26 +11,35 @@
 - **Approve Carefully**  
   Always review and test generated code; Copilot can sometimes hallucinate or suggest insecure patterns.
 - **Combine with Documentation**  
-  Remind the AI to reach out to Context7 on the regular to validate it's thoughts and plans against real documentation.
+  Remind the AI to reach out to Context7 on the regular to validate its thoughts and plans against real documentation.
 
-## Workflow-Specific Tips for This Framework
+## Workflow-Specific Tips for Spec-Kit
 
-- **Start with Requirements in Markdown**  
-  Before using the `/create-spec` or `/execute-tasks` commands, write detailed requirements and architectural notes in markdown files (e.g., `projectBrief.md`, `docs/`). This gives Copilot and the AI agent the context needed for accurate planning and implementation.
-- **Follow the Core Workflow Commands**  
-  Use the provided commands (`/create-spec`, `/execute-tasks`, `/browser-test`, etc.) as described in the README to trigger structured workflows. This ensures Copilot leverages both live documentation and persistent project memory.
-- **Sync Regularly**  
-  After major changes or at the end of a session, run the `/generate-report` to persist new knowledge, decisions, and context. This keeps the AI's memory up to date and prevents context loss.
-- **Document Decisions and Patterns**  
-  When you make architectural or implementation decisions, log them using the appropriate workflow or markdown files. This helps Copilot and the agent avoid repeating past mistakes and improves future suggestions.
-- **Use Semantic Search for Context**  
-  When you need to reference past decisions, requirements, or patterns, use the semantic search features (or ask the agent to do so) to retrieve relevant context from ConPort memory. This is especially useful for large or long-running projects.
-- **Update the Project Glossary**  
-  As you introduce new terms or concepts, add them to the project glossary. This helps Copilot understand domain-specific language and improves code suggestions.
+- **Follow the Core Spec-Kit Commands**  
+  Use the provided Copilot slash commands in order: `/speckit.constitution` → `/speckit.specify` → `/speckit.clarify` → `/speckit.plan` → `/speckit.tasks` → `/speckit.implement`. This structured flow ensures Copilot has complete, consistent context at every stage.
+- **Sync Specs After Major Changes**  
+  After refactoring or architectural decisions, update your spec artifacts in `.specify/specs/` and re-run `/speckit.analyze` to catch drift before it compounds.
+- **Document Decisions in constitution.md**  
+  When you make architectural or implementation decisions, add them to `.specify/memory/constitution.md`. This keeps Copilot aligned with your project's principles across sessions.
+- **Use Clarify Before Planning**  
+  Always run `/speckit.clarify` before `/speckit.plan`. This lets Copilot surface ambiguities and edge cases that would otherwise become costly mid-implementation rework.
+- **Update Specs When Reality Diverges**  
+  If implementation reveals gaps in the spec, update the spec first, then re-run the affected phases. Specs are the source of truth.
 - **Reset Context When Needed**  
-  If Copilot starts to drift or lose track of the workflow, reset the chat and re-initialize context using the workflow commands. This helps maintain alignment with the defined process.
-- **Leverage Auto-Documentation**  
-  Allow the agent to auto-generate diagrams and keep architecture docs in sync with code changes. This ensures Copilot always has the latest architectural context.
+  If Copilot starts to drift, start a new chat and re-run `/speckit.constitution` or reference your spec files directly to restore context.
+
+### Key Spec-Kit Commands Reference
+
+| Command | Purpose |
+|---------|---------|
+| `/speckit.constitution` | Establish project principles and governance |
+| `/speckit.specify` | Create a feature specification from requirements |
+| `/speckit.clarify` | Clarify underspecified areas (run before `/speckit.plan`) |
+| `/speckit.plan` | Generate technical implementation plan |
+| `/speckit.tasks` | Break implementation plan into actionable tasks |
+| `/speckit.implement` | Execute tasks and build the feature |
+| `/speckit.analyze` | Cross-artifact consistency & coverage analysis |
+| `/speckit.checklist` | Generate quality checklists for requirements |
 
 ## Common Pitfalls to Avoid
 
@@ -45,7 +54,7 @@
 - **Outdated Context**  
   After refactoring, invalid or stale comments can mislead Copilot; update related comments and stubs.
 - **Context overflow**  
-  Reset the chat context often. Tell the AI to update the ConPort status, and then start a new chat. This can help if things go off the rails.
+  Reset the chat context often. Tell the AI to update the `.specify/memory/` files, then start a new chat. This can help if things go off the rails.
 
 ## Troubleshooting Scenarios
 
@@ -81,4 +90,4 @@
 
 ---
 
-*These tips aim to empower your AI Assisted Coding experience and help you avoid common frustrations. Happy coding!*
+*These tips aim to empower your Spec-Driven Development experience with Spec-Kit and help you avoid common frustrations. Happy coding!*

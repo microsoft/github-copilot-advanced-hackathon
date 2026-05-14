@@ -2,21 +2,21 @@
 
 ## 🎯 Challenge Overview
 
-Your mission is to **design and document a new feature** for the InvenTree reference application. This challenge will teach you how to write comprehensive feature requirements that integrate seamlessly with the ConPort workflow and architectural patterns we've created.
+Your mission is to **design and document a new feature** for the InvenTree reference application. This challenge will teach you how to write comprehensive feature requirements using the Spec-Kit Spec-Driven Development workflow.
 
 ## 📋 What You'll Learn
 
 - How to analyze existing architecture before proposing new features
 - Writing clear, actionable feature requirements
 - Documenting technical decisions and trade-offs
-- Creating implementation roadmaps that align with microservices patterns
-- Using ConPort to track feature development progress
+- Creating implementation roadmaps that align with existing patterns
+- Using Spec-Kit to track and evolve feature development
 
 ## 🏗️ Architecture Context
 
 Before you begin, familiarize yourself with the existing InvenTree architecture by reviewing:
 
-- **AI Generated documentation**: `docs/*.md` - Project and Architecture documentation created by GitHub Copilot
+- **Spec-Kit documentation**: `.specify/memory/constitution.md` — your project's governing principles
 - **Current Services**: Parts, Stock, Build, Orders, Reports, Admin
 - **Technology Stack**: Python 3.11, Django, React
 
@@ -36,7 +36,7 @@ Create something unique that fits the inventory management application and showc
 
 ## 📝 Requirements Generation
 
-Pass your idea with as much detail as you'd like to the `/create-spec` prompt. The AI will then generate a `.docs/specs` folder, with a specification detailing what it understands of your requirements. You will want to go through all of these documents, and correct any mistakes, add anything it missed, or take off features and functionality you don't want it to implement.
+Pass your idea with as much detail as you'd like to the `/speckit.specify` prompt. Copilot will generate a `.specify/specs/` folder with a specification detailing what it understands of your requirements. Go through all generated documents, correct any mistakes, add anything it missed, or remove features and functionality you don't want implemented.
 
   > [!IMPORTANT]
   > Try to be specific! Don't just tell the AI: "add a rewards system", give it details, such as: `create a customer loyalty program where for every $1 spent on the store, the customer earns 10 points. And for each 1,000 points the customer can redeem those points for $10 off their next purchase. Show the customer's point balance on their profile. And show the number of points earned under each item on the product page`
@@ -55,7 +55,7 @@ Your feature requirements document should demonstrate:
 - [ ] **Edge Cases Considered**: Error conditions and failure modes addressed
 
 ### 🏗️ **Technical Soundness**
-- [ ] **Architectural Alignment**: Fits existing microservices patterns
+- [ ] **Architectural Alignment**: Fits existing patterns
 - [ ] **Service Boundaries**: Clear ownership and responsibilities
 - [ ] **Data Consistency**: ACID vs eventual consistency choices justified
 - [ ] **Event Design**: Proper domain and integration events identified
@@ -79,7 +79,6 @@ Your feature requirements document should demonstrate:
 3. **Start with Why**: Begin with the business problem and user needs
 4. **Design Incrementally**: Build complexity gradually
 5. **Think Operations**: Consider monitoring, deployment, and maintenance
-6. **Document Decisions**: Use ConPort to track your reasoning
 
 ## 💡 Pro Tips
 
@@ -97,27 +96,66 @@ Your feature requirements document should demonstrate:
 
 Remember: **Good requirements are the foundation of great software**. Take your time to think through the problem space before jumping into solutions. The InvenTree application is a reference for modern software engineering practices—your feature should exemplify the same level of thoughtfulness and technical excellence.
 
-**Once you have a well defined specification, you can start work!**
+## Specify → Clarify → Plan → Tasks → Implement
 
-When you're created your specs, prompt Copilot in Agent Mode:
+**Once you have a well-defined specification, you can start work!**
 
-`/execute-tasks`
+### Step 1: Create your spec
 
-You can pass it alone, or reference the specific task id from the `tasks.md` file you'd like to start with. Remember to help the AI keep track of completed tasks, so that you can easily start new conversations as context windows fill up. You can have the AI pickup on a specific task id, and sub-task with the same command:
+Describe your feature in Copilot Agent Mode:
 
-`/execute-task Resume 03bd0240-fdcc-48a9-832c-71c44193a375 task 1.10`
+```text
+/speckit.specify <describe your feature here with as much detail as possible>
+```
 
-From here, the AI will begin implementing your feature. Ensure you interact with the AI often, running unit tests, building and validating it's progress, provide feedback. Continue to use this process as you go until your feature is completed!
+### Step 2: Clarify ambiguities (recommended)
+
+Before planning, let Copilot ask clarifying questions about underspecified areas:
+
+```text
+/speckit.clarify
+```
+
+### Step 3: Create a technical implementation plan
+
+Provide your tech-stack preferences and let Copilot generate an implementation plan:
+
+```text
+/speckit.plan The application uses Python 3.11 with Django and React. Follow the existing app patterns in InvenTree.
+```
+
+### Step 4: Break into tasks
+
+Generate an actionable task list from the implementation plan:
+
+```text
+/speckit.tasks
+```
+
+### Step 5: Implement
+
+Execute all tasks according to the plan:
+
+```text
+/speckit.implement
+```
+
+You can also run `/speckit.analyze` after `/speckit.tasks` to validate cross-artifact consistency before coding begins.
+
+From here, Copilot will begin implementing your feature. Ensure you interact with it often — run unit tests, build and validate its progress, and provide feedback. Continue this loop until your feature is complete!
+
 ```mermaid
 flowchart LR
-  Plan[Plan<br/>/create-spec] --> Act[Act<br/>/execute-tasks]
-  Act --> Status[Status<br/>/generate-report]
-  Status --> Debug[Debug<br/>/startDebugging]
-  Debug --> Act
+  Specify[Specify<br/>/speckit.specify] --> Clarify[Clarify<br/>/speckit.clarify]
+  Clarify --> Plan[Plan<br/>/speckit.plan]
+  Plan --> Tasks[Tasks<br/>/speckit.tasks]
+  Tasks --> Implement[Implement<br/>/speckit.implement]
+  Implement --> Specify
+  style Specify stroke:#4F8EF7,stroke-width:2px
+  style Clarify stroke:#4F8EF7,stroke-width:2px
   style Plan stroke:#4F8EF7,stroke-width:2px
-  style Act stroke:#4F8EF7,stroke-width:2px
-  style Status stroke:#4F8EF7,stroke-width:2px
-  style Debug stroke:#4F8EF7,stroke-width:2px
+  style Tasks stroke:#4F8EF7,stroke-width:2px
+  style Implement stroke:#4F8EF7,stroke-width:2px
 ```
 
 ---
@@ -125,4 +163,4 @@ flowchart LR
 *This challenge is designed to simulate real-world feature development while teaching best practices for requirements documentation and architectural thinking. Focus on quality over speed—the goal is learning, not just completion.*
 
 ## Tips & Tricks
-Check out the [Tips & Tricks](../3-tips.md) for a collection of common challenges and solutions we've faced and solved ourselves using this framework!
+Check out the [Tips & Tricks](../3-tips.md) for a collection of common challenges and solutions we've faced and solved ourselves using Spec-Kit!
